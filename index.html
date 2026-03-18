@@ -1,155 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Dr. Rodrigo Silva | Psicólogo Clínico Especialista</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Flávia Fantim - Advogada Previdenciário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-    <div class="wrapper">
-        <header>
-            <img class="img-logo" src="./assets/logo-img.png" alt="logo-image">
-            <p>Dificuldades com INSS? <b>Te ajudamos a conquistar o melhor benefício no INSS!</b></p>
-            <button><a class="link-contact" href="https://contate.me/flavia-advogada2">Falar com advogado especialista
-                    agora</a></button></button>
-        </header>
 
-        <section class="section-assuntos">
+    <!-- Lottie Player for Background animations (optional soft blur blobs) -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
 
-            <h1>Assuntos em que podemos lhe ajudar</h1>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Dr. Rodrigo <span>Silva</span></a>
+            <nav class="nav-links">
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#contato" class="btn btn-outline">Agendar Consulta</a>
+        </div>
+    </header>
 
-            <div class="container-assuntos">
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/aposentadoria.png" alt="img-aposentadoria" />
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Atendimento Online e Presencial</div>
+                <h1 class="hero-title">Recupere o controle da sua mente e viva com <span>propósito.</span></h1>
+                <p class="hero-subtitle">Especialista em Ansiedade e Burnout. Um espaço seguro, acolhedor e sem julgamentos para você se reencontrar.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Quero agendar minha sessão <i class='bx bx-right-arrow-alt'></i></a>
+                    <div class="social-proof-small">
+                        <div class="avatars">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="Paciente">
+                            <img src="https://i.pravatar.cc/100?img=2" alt="Paciente">
+                            <img src="https://i.pravatar.cc/100?img=3" alt="Paciente">
+                        </div>
+                        <p>+500 vidas transformadas</p>
                     </div>
-
-                    <p>Aposentadorias</p>
-
-                </div>
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/beneficios.png" alt="img-beneficios" />
-                    </div>
-                    <p>Benefícios Assistenciais ao Idoso e Deficiente (BCP - LOAS)</p>
-
-                </div>
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/auxilio-doenca.png" alt="img-auxilio-doença" />
-                    </div>
-                    <p>Auxílio doença e acidente</p>
-
-                </div>
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/pensao-morte.png" alt="pensao-morte" />
-                    </div>
-                    <p>Pensão por morte</p>
-
                 </div>
             </div>
-
-            <div class="container-assuntos">
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/auxilio-reclusao.png" alt="auxilio-reclusao" />
-                    </div>
-                    <p>Auxílio reclusão</p>
-
+            <div class="hero-image-wrapper">
+                <!-- Using placeholder for professional photo -->
+                <div class="hero-image-bg">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600&h=700" alt="Dr. Rodrigo Silva Psicólogo" class="hero-image">
                 </div>
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/revisao-aposentadoria.png" alt="img-revisao-aposentadoria" />
+                <div class="floating-card card-1">
+                    <i class='bx bx-brain'></i>
+                    <div>
+                        <strong>Terapia Cognitivo-Comportamental</strong>
+                        <span>Abordagem validada cientificamente</span>
                     </div>
-                    <p>Revisões de aposentadorias</p>
-
                 </div>
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/planejmaneto-social.png" alt="img-planejamento-social" />
-                    </div>
-                    <p>Planejamento previdenciário</p>
-
-                </div>
-                <div class="assuntos">
-                    <div class="img-assunto">
-                        <img src="./assets/Mandado-seguranca.png"
-                            alt="img-mandado-segurança-processo-administrativo-inss" />
-                    </div>
-                    <p>Mandado de segurança para destravar processo administrativo no INSS</p>
-
-                </div>
-
             </div>
+        </div>
+    </section>
 
-            <!-- <div class="container-assuntos-button">
-                <button><a class="link-contact" href="https://contate.me/flavia-advogada2">Falar com advogado
-                        especialista
-                        agora</a></button></button>
-            </div> -->
-
-        </section>
-
-        <section class="section-flavia">
-
-
-            <img class="img-flavia" src="./assets/flavia.jpg" alt="img-flavia" />
-
-
-            <div class="sobre-text">
-                <h2>Flávia Fantim</h2>
-                <p>OAB/SP 449.415</p>
-                <p>A Dra. Flávia é a fundadora do escritório Flávia Fantim Advogados Associados, especializado em
-                    aposentadorias, planejamentos, revisões e benefícios previdenciários.</p>
-                <p>Com vasta experiência na área, já ajudou centenas de pessoas a garantirem o recebimento de seus
-                    direitos com a concessão de benefícios previdenciários em todo o Brasil.</p>
-                <p>Conte com uma especialista para te ajudar a planejar sua aposentadoria e garantir o melhor benefício
-                    para você!</p>
-
-                <button class="button-sobre"><a class="link-contact-sobre" href="https://contate.me/flavia-advogada2">Falar
-                        com advogado especialista
-                        agora</a></button></button>
+    <!-- Pains Section (Gatilho de Identificação) -->
+    <section class="pains" id="especialidades">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Você se sente assim ultimamente?</h2>
+                <p>Muitas pessoas passam por isso em silêncio, mas você não precisa enfrentar isso sozinho.</p>
             </div>
+            <div class="grid cards-grid">
+                <div class="card pain-card">
+                    <div class="card-icon"><i class='bx bx-wind'></i></div>
+                    <h3>Ansiedade Constante</h3>
+                    <p>Pensamentos acelerados, preocupação excessiva com o futuro e sensação de que algo ruim vai acontecer.</p>
+                </div>
+                <div class="card pain-card">
+                    <div class="card-icon"><i class='bx bx-battery'></i></div>
+                    <h3>Burnout e Exaustão</h3>
+                    <p>Esgotamento físico e mental extremo ligado ao trabalho. Falta de energia até para atividades prazerosas.</p>
+                </div>
+                <div class="card pain-card">
+                    <div class="card-icon"><i class='bx bx-cloud-rain'></i></div>
+                    <h3>Sintomas Depressivos</h3>
+                    <p>Tristeza profunda, falta de motivação, apatia e perda de interesse nas coisas que antes você amava.</p>
+                </div>
+                <div class="card pain-card">
+                    <div class="card-icon"><i class='bx bx-group'></i></div>
+                    <h3>Conflitos de Relacionamento</h3>
+                    <p>Dificuldade de comunicação, dependência emocional, insegurança ou ciúmes constantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </section>
-        <footer>
+    <!-- About Section (Autoridade) -->
+    <section class="about" id="sobre">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600&h=600" alt="Consultório Dr. Rodrigo">
+                <div class="experience-badge">
+                    <span class="number">10+</span>
+                    <span class="text">Anos de<br>Experiência</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Quem caminhará ao seu lado?</h2>
+                <p class="about-lead">Olá, sou o Rodrigo Silva. CRP 06/123456</p>
+                <p>Sou Psicólogo Clínico formado pela USP, com especialização em Terapia Cognitivo-Comportamental e Mindfulness. Minha missão é ajudar você a compreender suas emoções, quebrar padrões disfuncionais e construir uma vida com mais leveza.</p>
+                <ul class="about-list">
+                    <li><i class='bx bx-check-circle'></i> Mais de 5.000 horas de atendimento clínico.</li>
+                    <li><i class='bx bx-check-circle'></i> Especialista em Transtornos de Ansiedade.</li>
+                    <li><i class='bx bx-check-circle'></i> Sigilo absoluto e ambiente livre de preconceitos.</li>
+                </ul>
+                <div class="signature">Dr. Rodrigo Silva</div>
+            </div>
+        </div>
+    </section>
 
-              
-                    <img class="img-logo-footer" src="./assets/logo-img.png"/>
-             
-                
+    <!-- Call to Action Mid -->
+    <section class="cta-mid">
+        <div class="container text-center">
+            <h2>Pronto para dar o primeiro passo?</h2>
+            <p>A terapia é o maior investimento que você pode fazer em si mesmo. Agende uma sessão de avaliação.</p>
+            <a href="#contato" class="btn btn-primary btn-large">Começar Minha Jornada Agora</a>
+        </div>
+    </section>
 
-                <div class="texto-footer">
-                    <h2>Contatos</h2>
-                    <p><img class="img-contatos" src="./assets/telefone.png"/>(14) 99855-1057</p>
-                    <p><img class="img-contatos" src="./assets/email.png"/> flaviafantim@adv.oabsp.org.br</p>
-                    <p><img class="img-contatos" src="./assets/endereco.png"> Av. Francisco Canhos, 630A - Jaú/SP</p>
-                    <div class="social">
-                        <a href="https://contate.me/flavia-advogada2"><img src="./assets/whtas.png" alt="img-whats" /></a>
-                        <a href="https://www.instagram.com/adv.flaviafantim/"><img src="./assets/instagram.png" alt="img-instagram"/></a>
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>O que dizem os pacientes</h2>
+                <p>Histórias reais de superação e autoconhecimento.</p>
+            </div>
+            <div class="grid test-grid">
+                <div class="card test-card">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    <p class="test-text">"Eu achava que ansiedade era algo normal e que eu tinha que viver com isso. O Dr. Rodrigo me ajudou a entender os gatilhos e me deu ferramentas práticas que mudaram meu dia a dia."</p>
+                    <div class="test-author">
+                        <strong>M. C.</strong>
+                        <span>Paciente Online</span>
                     </div>
                 </div>
+                <div class="card test-card">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    <p class="test-text">"Cheguei ao consultório no ápice do Burnout. Não conseguia mais trabalhar. O acolhimento fez toda a diferença para minha recuperação profissional e pessoal."</p>
+                    <div class="test-author">
+                        <strong>F. A.</strong>
+                        <span>Paciente Presencial</span>
+                    </div>
+                </div>
+                <div class="card test-card">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    <p class="test-text">"As sessões online são perfeitas pra mim que não tenho tempo de me deslocar. Sinto a mesma qualidade e conexão que no presencial. Excelente profissional."</p>
+                    <div class="test-author">
+                        <strong>R. S.</strong>
+                        <span>Paciente Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container faq-container">
+            <div class="faq-text">
+                <h2>Dúvidas Frequentes</h2>
+                <p>Ainda tem alguma pergunta sobre como funciona a terapia? Veja as respostas abaixo.</p>
+                <div class="faq-card-support">
+                    <i class='bx bx-message-rounded-dots'></i>
+                    <div>
+                        <strong>Ainda tem dúvidas?</strong>
+                        <p>Me chame no WhatsApp e responderei pessoalmente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Como funcionam as sessões online? <i class='bx bx-chevron-down'></i>
+                    </button>
+                    <div class="accordion-body">
+                        As sessões online ocorrem por videochamada em plataforma segura e sigilosa. Têm a mesma eficácia comprovada da terapia presencial, com a vantagem do conforto da sua casa.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Quanto tempo dura o tratamento? <i class='bx bx-chevron-down'></i>
+                    </button>
+                    <div class="accordion-body">
+                        Depende de cada caso e dos objetivos terapêuticos. A TCC costuma ser uma terapia breve e focada em resultados, mas a duração é avaliada em conjunto com o paciente.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Atende por plano de saúde? <i class='bx bx-chevron-down'></i>
+                    </button>
+                    <div class="accordion-body">
+                        Atendo apenas de forma particular, mas emito recibo para você solicitar reembolso junto ao seu plano de saúde (consulte o seu convênio sobre as regras de reembolso).
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Qual é o valor da sessão? <i class='bx bx-chevron-down'></i>
+                    </button>
+                    <div class="accordion-body">
+                        Os valores são passados diretamente em nosso primeiro contato pelo WhatsApp, seguindo as diretrizes éticas do CFP. Clique no botão de agendamento para conversarmos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">Dr. Rodrigo <span>Silva</span></a>
+                    <p>Psicólogo Clínico - CRP 06/123456</p>
+                    <p>Transformando vidas através do autoconhecimento e saúde mental.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Fale Comigo</h3>
+                    <ul>
+                        <li><i class='bx bxl-whatsapp'></i> (11) 99999-9999</li>
+                        <li><i class='bx bx-envelope'></i> contato@drrodrigosilva.com.br</li>
+                        <li><i class='bx bx-map'></i> Av. Paulista, 1000 - São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                    </div>
+                </div>
+            </div>
             
+            <div class="footer-actions">
+                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-whatsapp">
+                    <i class='bx bxl-whatsapp'></i> Agendar via WhatsApp
+                </a>
+            </div>
 
-            
-            <!-- <div class="social-footer">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Rodrigo Silva. Todos os direitos reservados.</p>
+                <div class="developer-tag">
+                    Quer um site semelhante? Entre em contato com o desenvolvedor: 
+                    <a href="https://instagram.com/yan_menephyl_works" target="_blank">@yan_menephyl_works</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-            </div> -->
-
-
-        </footer>
-    </div>
+    <script src="./script.js"></script>
 </body>
-
 </html>
